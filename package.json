@@ -1,0 +1,17 @@
+{
+  "name": "ts-module",
+  "version": "1.0.0",
+  "description": "Template repository for creation of typescript modules",
+  "main": "index.ts",
+  "repository": "https://github.com/comalkolik/ts-module.git",
+  "author": "Thibaut LERMYTTE <lermytte.t@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
