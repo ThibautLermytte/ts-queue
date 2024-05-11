@@ -1,9 +1,9 @@
 {
-  "name": "ts-module",
+  "name": "ts-queue",
   "version": "1.0.0",
-  "description": "Template repository for creation of typescript modules",
+  "description": "",
   "main": "index.ts",
-  "repository": "https://github.com/comalkolik/ts-module.git",
+  "repository": "https://github.com/ThibautLermytte/ts-queue.git",
   "author": "Thibaut LERMYTTE <lermytte.t@gmail.com>",
   "license": "MIT",
   "scripts": {
