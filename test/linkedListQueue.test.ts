@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import LinkedListQueue from '../src/linkedListQueue';
+import LinkedListQueue from '../lib/implementations/linkedListQueue';
 
 const queue = new LinkedListQueue<number>();
 

@@ -1,6 +1,6 @@
-import Queue from '../src/queue';
-import ArrayQueue from '../src/implementations/arrayQueue';
-import LinkedListQueue from '../src/implementations/linkedListQueue';
+import Queue from '../lib/queue';
+import ArrayQueue from '../lib/implementations/arrayQueue';
+import LinkedListQueue from '../lib/implementations/linkedListQueue';
 import { describe, bench, beforeAll } from 'vitest';
 
 const size = 100000;

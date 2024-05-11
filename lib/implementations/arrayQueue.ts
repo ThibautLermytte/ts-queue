@@ -1,4 +1,4 @@
-import Queue from './queue';
+import Queue from '../queue';
 
 export default class ArrayQueue<T> implements Queue<T> {
   private data: Array<T> = [];

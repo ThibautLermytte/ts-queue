@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import ArrayQueue from '../src/implementations/arrayQueue';
+import ArrayQueue from '../lib/implementations/arrayQueue';
 
 const queue = new ArrayQueue<number>();
 
