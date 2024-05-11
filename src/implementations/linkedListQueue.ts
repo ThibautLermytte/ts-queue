@@ -1,6 +1,6 @@
-import Queue from './queue';
-import Node from './linkedList/node';
-import LinkedList from './linkedList/linkedList';
+import Queue from '../queue';
+import Node from '../dataStructures/linkedList/node';
+import LinkedList from '../dataStructures/linkedList/linkedList';
 
 export default class LinkedListQueue<T = any>
   extends LinkedList<T>
