@@ -1,11 +1,11 @@
 import Queue from '../lib/queue';
 import QueueDecorator from '../lib/decorator';
 
-export interface Observer<T = any> {
+export interface Observer<T> {
   update(...datas: T[]): void;
 }
 
-export default class QueueObserver<T = any>
+export default class QueueObserver<T>
   extends QueueDecorator<T>
   implements Observer<T>
 {

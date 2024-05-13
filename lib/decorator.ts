@@ -1,6 +1,6 @@
 import Queue from './queue';
 
-export default class QueueDecorator<T = any> implements Queue<T> {
+export default class QueueDecorator<T> implements Queue<T> {
   constructor(protected queue: Queue<T>) {}
 
   public enqueue(...datas: T[]): void {
