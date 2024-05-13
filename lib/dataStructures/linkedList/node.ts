@@ -1,8 +1,5 @@
-export default class Node<T = unknown> {
-  public data!: T;
+export default class Node<T> {
   public next: Node<T> | null = null;
 
-  constructor(data: T) {
-    this.data = data;
-  }
+  constructor(public data: T) {}
 }
