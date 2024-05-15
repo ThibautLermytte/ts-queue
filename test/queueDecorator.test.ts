@@ -22,7 +22,8 @@ const observer = new QueueObserver<number>(new ArrayQueue());
 describe('Queue decorator: observer pattern', () => {
   test('update', () => {
     observer.update(1);
-
     expect(observer.isEmpty()).toBeFalsy();
+    observer.dequeue();
+    expect(observer.isEmpty()).toBeTruthy();
   });
 });
