@@ -21,7 +21,7 @@ describe('Comparing queue filling performances.', () => {
   });
 });
 
-describe('Comparing queue Empty performances with while instruction.', () => {
+describe('Comparing queue empty performances with while instruction.', () => {
   const emptyWhile = (queue: Queue<number>) => {
     while (!queue.isEmpty()) queue.dequeue();
   };
@@ -30,7 +30,7 @@ describe('Comparing queue Empty performances with while instruction.', () => {
   bench('Empty linked list queue.', () => emptyWhile(linkedListQueue));
 });
 
-describe('Comparing queue Empty performances with for instruction.', () => {
+describe('Comparing queue empty performances with for instruction.', () => {
   const emptyFor = (queue: Queue<number>) => {
     for (let data = queue.dequeue(); data; data = queue.dequeue());
   };
