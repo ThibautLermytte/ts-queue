@@ -8,8 +8,7 @@ describe('Linked list queue', () => {
     expect(queue.isEmpty()).toBeTruthy();
   });
   test('enqueue', () => {
-    queue.enqueue(0);
-    queue.enqueue(1);
+    queue.enqueue(0, 1);
     expect(queue.isEmpty()).toBeFalsy();
   });
   test('dequeue', () => {
