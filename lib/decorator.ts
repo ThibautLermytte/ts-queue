@@ -1,13 +1,13 @@
 import Queue from './queue';
 
-export default class QueueDecorator<T> implements Queue<T> {
-  constructor(protected queue: Queue<T>) {}
+export default class QueueDecorator<DataType> implements Queue<DataType> {
+  constructor(protected queue: Queue<DataType>) {}
 
-  public enqueue(...datas: T[]): void {
+  public enqueue(...datas: DataType[]): void {
     this.queue.enqueue(...datas);
   }
 
-  public dequeue(): T | null | undefined {
+  public dequeue(): DataType | null | undefined {
     return this.queue.dequeue();
   }
 
