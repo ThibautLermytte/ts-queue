@@ -1,14 +1,13 @@
 import Queue from '../queue';
-import Node from '../dataStructures/linkedList/node';
-import LinkedList from '../dataStructures/linkedList/linkedList';
+import LinkedList, { Node } from '../dataStructures/linkedList';
 
-export default class LinkedListQueue<T>
-  extends LinkedList<T>
-  implements Queue<T>
+export default class LinkedListQueue<DataType>
+  extends LinkedList<DataType>
+  implements Queue<DataType>
 {
-  public enqueue(...datas: T[]): void {
+  public enqueue(...datas: DataType[]): void {
     for (const data of datas) {
-      const node = new Node<T>(data);
+      const node = new Node<DataType>(data);
 
       if (this.isEmpty()) {
         this.front = node;
@@ -21,7 +20,7 @@ export default class LinkedListQueue<T>
   }
 
   public dequeue() {
-    let data: T | null = null;
+    let data: DataType | null = null;
 
     if (this.front) {
       data = this.front.data;
