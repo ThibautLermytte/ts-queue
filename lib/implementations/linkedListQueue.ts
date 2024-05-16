@@ -19,7 +19,7 @@ export default class LinkedListQueue<DataType>
     }
   }
 
-  public dequeue() {
+  public dequeue(): DataType | null | undefined {
     let data: DataType | null = null;
 
     if (this.front) {
