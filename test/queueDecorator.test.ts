@@ -23,7 +23,8 @@ describe('Queue decorator: observer pattern', () => {
   test('update', () => {
     observer.update(1);
     expect(observer.isEmpty()).toBeFalsy();
-    observer.dequeue();
+    const data = observer.dequeue();
     expect(observer.isEmpty()).toBeTruthy();
+    expect(data).toEqual(1);
   });
 });
