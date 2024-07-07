@@ -5,6 +5,6 @@ export class Node<DataType> {
 }
 
 export default class LinkedList<DataType> {
-  protected front: Node<DataType> | null = null;
-  protected rear: Node<DataType> | null = null;
+  public front: Node<DataType> | null = null;
+  public rear: Node<DataType> | null = null;
 }
